@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="198dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titlepage"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="28dp"
+                android:textSize="30sp"
+                android:text="Tambah Pengingat"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+        </View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/bgitemdoes"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp">
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addtitle"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Tambah Judul"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/titledoes"
+                android:background="@drawable/bginputtask"
+                android:inputType="text"
+                android:hint="Masukan Judul Pengingat"
+                android:paddingLeft="12dp"
+                android:textColorHint="#b5b5b5"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adddesc"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Tambah Deskripsi"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/descdoes"
+                android:background="@drawable/bginputtask"
+                android:maxLength="25"
+                android:inputType="text"
+                android:hint="Masukan Deskripsinya"
+                android:paddingLeft="12dp"
+                android:textColorHint="#b5b5b5"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adddate"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Tambah Waktu"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/datedoes"
+                android:background="@drawable/bginputtask"
+                android:inputType="text"
+                android:hint="Untuk Kapan Pengingat ini?"
+                android:paddingLeft="12dp"
+                android:textColorHint="#b5b5b5"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Buat Pengingat"
+        android:textColor="#fff"
+        android:background="@drawable/btncreate"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Batal"
+        android:textColor="#fff"
+        android:background="@drawable/btncancel"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+</LinearLayout>
